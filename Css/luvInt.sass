@@ -1,16 +1,21 @@
 //default
 $de : rgb(235, 235, 235)
+$deb : rgb(184, 184, 184)
 
 //opacity
-$tra : 0.8
+$tra : 0.4
 
 //blue color
 $blue : rgba(60, 199, 244,$tra)
+$blueb : rgb(0, 138, 215)
+
+//Green color
+$green : rgba(158, 255, 97,$tra)
+$greenb : rgb(80, 201, 78)
 
 
 
-//mixins
-
+/* mixins */
 //radius
 @mixin radius($t:5px)
   border-radius : $t
@@ -24,6 +29,7 @@ $blue : rgba(60, 199, 244,$tra)
   @include radius()
   padding: 10px
   box-sizing: border-box
+  margin: 15px
 /*----------------------*/
 
 body
@@ -39,14 +45,23 @@ h1
 
 
 .cup
-  @include border(1px $de - 150)
+  @include border(1px $deb)
   @include cup()
   background: $de
 
 .cup-blue
-  @include border(1px blue / 2)
+    @include border(1px $blueb)
+    @include cup()
+    background: $blue
+.blue
+    color: $blueb
+
+.cup-green
+  @include border(1px $greenb)
   @include cup()
-  background: $blue
+  background: $green
+.green
+  color: $greenb
 
 .img-wrap
   width: 100%
