@@ -1,1 +1,1 @@
-body{background:blue;color:#333}div{background-color:yellow}h1{color:#333}.cup{border-radius:5px;background:#ebebeb;padding:10px}
+body{color:#333}div{background-color:yellow}h1{color:#333}.cup{border:1px #555 solid;border-radius:5px;padding:10px;box-sizing:border-box;background:#ebebeb}.cup-blue{border:1px navy solid;border-radius:5px;padding:10px;box-sizing:border-box;background:rgba(60,199,244,0.8)}.img-wrap{width:100%}

@@ -1,8 +1,34 @@
 //default
-$de : rgb(235, 235, 235);
+$de : rgb(235, 235, 235)
+
+//opacity
+$tra : 0.8
+
+//blue color
+$blue : rgba(60, 199, 244,$tra)
+
+
+
+//mixins
+
+//radius
+@mixin radius($t:5px)
+  border-radius : $t
+
+//border
+@mixin border($border:5px)
+  border: $border solid
+
+//cup
+@mixin cup
+  @include radius()
+  padding: 10px
+  box-sizing: border-box
+/*----------------------*/
+
 body
-  background : blue
   color : #333
+
 
 div
   background:
@@ -10,10 +36,17 @@ div
 
 h1
   color : #333
-@mixin radius($t:5px)
-  border-radius : $t
+
 
 .cup
-  @include radius()
-  background : $de
-  padding : 10px
+  @include border(1px $de - 150)
+  @include cup()
+  background: $de
+
+.cup-blue
+  @include border(1px blue / 2)
+  @include cup()
+  background: $blue
+
+.img-wrap
+  width: 100%
