@@ -1,0 +1,19 @@
+
+/* mixins */
+//radius
+@mixin radius($t:5px)
+  border-radius : $t
+
+//border
+@mixin border($border:5px)
+  border: $border solid
+
+//cup
+@mixin cup
+  @include radius()
+  padding: 10px
+  box-sizing: border-box
+
+*
+  margin : 0px
+  padding : 0px
