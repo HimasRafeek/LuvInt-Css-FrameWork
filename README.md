@@ -3,5 +3,5 @@
 # Come join me to Create an incredible Css FrameWork
 
 ###So far Progress
-<img src="images/Capture.jpg" width="75%">
+<img src="images/capture.jpg" width="75%">
 
