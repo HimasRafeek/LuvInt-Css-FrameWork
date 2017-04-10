@@ -66,14 +66,12 @@
     background-color: $yellowbun
   &:active
     @include shadow($basicShad )
-.luv-form
-  input
-    height: 30px
-    font-size: 18px
-    padding: 0px
-  button
-    margin: 0px
-    vertical-align: center
+.luv-int
+input
+  height: 30px
+  font-size: 18px
+  margin-right: -5px
+  padding: 0px
 //border top and bottom only
 .b
   @include bord()

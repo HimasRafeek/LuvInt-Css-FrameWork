@@ -13,7 +13,39 @@
   @include radius()
   padding: 10px
   box-sizing: border-box
+  margin: 15px
 
-*
-  margin : 0px
-  padding : 0px
+//button
+@mixin button
+  outline: none
+  padding: 10px
+  border: none
+
+@mixin shadow($shad...)
+  -webkit-box-shadow: $shad
+  -moz-box-shadow: $shad
+  -o-box-shadow: $shad
+  -ms-box-shadow: $shad
+  box-shadow: $shad
+
+@mixin radius($radius: 5px)
+  border-radius: $radius
+
+@mixin bun()
+  @include button()
+  color: white
+  font-size: 16px
+  @include radius()
+  -moz-user-select: none
+  -khtml-user-select: none
+  -webkit-user-select: none
+  -ms-user-select: none
+  user-select: none
+  padding: 10px 25px
+  box-sizing: border-box
+
+
+//border top and bottom
+@mixin bord()
+  border-top: 1px solid black
+  border-bottom: 1px solid black
