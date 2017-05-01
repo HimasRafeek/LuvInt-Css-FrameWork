@@ -5,6 +5,7 @@
   @include cup()
   background: $de
 
+
 //Blue cup
 .cup-blue
     @include border(1px $blueb)
@@ -34,6 +35,12 @@
 .red
   color: $redb
 
-//shadow
+//drop shadow
 .shad
   @include shadow($basicShadB)
+
+//clearfix
+.clearfix,
+.clearfix::before
+  content: '';
+  clear: both;

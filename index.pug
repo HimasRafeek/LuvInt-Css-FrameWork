@@ -2,17 +2,17 @@
 doctype
 html
   head 
-    link(rel="stylesheet", type="text/css", href="dist/css/maina.min.css")
+    link(rel="stylesheet", type="text/css", href="dist/css/main.min.css")
   body
     .box-group
-      .cup.box-5
+      .cup.center(style="width:500px")
         h1 Hello World!
-      .cup-blue.box-3
+      .cup-blue
         h1.blue Hello World!
-      .cup-green.box-4
+      .cup-green
          h1.green Hello World!
          p.green Hello Guys Whats is Up
-      .cup-red.box-3.shad
+      .cup-red.shad
          h1.red Hello World!
          p.red Hello Guys Whats is Up
          button.bun.bun-green Download World by Now
@@ -22,7 +22,69 @@ html
          button.bun.bun-yellow.b Download World by Now
          button.bun.bun-black Download World by Now
       form.luv-form.cup-blue
-        input(placeholder="Hellow") 
-        input(placeholder="Hellow") 
+        input.anime-text(type="text",placeholder="Hellow")
+        input.anime-text(type="text",placeholder="Hellow")
         button.bun.bun-green Login Now
         button.bun.bun-green Login Now
+        br
+        ul#radio
+          li
+            input(type="radio")#r
+            label(for="r").radio
+            label(for="r") Hello
+        //bar
+        ul#bar
+          li
+          input(type="checkbox")#1
+          label(for="1").box-bar
+          label(for="1") Hello
+    div.box
+        div.box-12.cup.shad
+          div.box-6.cup-blue
+            div.box-3.cup Hello
+            div.box-3.cup Hello
+            div.box-3.cup Hello
+            div.box-3.cup Hello
+          div.box-6.cup-blue
+            div.box-6.cup Hello
+            div.box-6.cup Hello
+            
+        div.box-11.cup
+          div.box-3.cup-blue Hello
+          div.box-3.cup-blue Hello
+          div.box-3.cup-blue Hello
+          div.box-3.cup-blue Hello
+        div.box-1.cup
+          div.box-12.cup-blue Hello
+          
+        div.box-10.cup Box No 10
+        div.box-2.cup Box No 2
+        div.box-9.cup-blue Box No 9
+        div.box-3.cup-blue Box No 3
+        div.box-8.cup-blue Box No 8
+        div.box-4.cup-blue Box No 4
+        div.box-7.cup-blue Box No 7
+        div.box-5.cup-blue Box No 5
+        div.box-6.cup-blue Box No 6
+        div.box-6.cup-blue Box No 6
+        div.box-5.cup-blue Box No 5
+        div.box-7.cup-blue Box No 7
+        div.box-4.cup-blue Box No 4
+        div.box-8.cup-blue Box No 8
+        div.box-3.cup-blue Box No 3
+        div.box-9.cup-blue Box No 9
+        div.box-2.cup-blue Box No 2
+        div.box-10.cup-blue Box No 10
+        div.box-11.cup-blue Box No 11
+        div.box-1.cup-blue Box No 1
+        div.box-12.cup-blue Box No 12
+        div.clearfix   
+        div.cup-blue
+          h1.blue Hello World
+      section
+        div
+          address 476/1  Bulugohatenna batugoda
+          abbr
+            a(href="#", target="_blank") Visit My Facebook Page
+            
+    

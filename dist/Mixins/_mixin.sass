@@ -13,7 +13,6 @@
   @include radius()
   padding: 10px
   box-sizing: border-box
-  margin: 15px
 
 //button
 @mixin button
@@ -49,3 +48,14 @@
 @mixin bord()
   border-top: 1px solid black
   border-bottom: 1px solid black
+  background: yellow
+
+@mixin roundImg()
+  border-radius: 100%
+  padding: 5px
+  box-sizing: border-box
+  background: white
+
+@mixin boxImg()
+  border: 5 solid white
+  box-sizing: border-box
